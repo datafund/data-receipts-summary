@@ -5,7 +5,7 @@ Display consents summary.
 ## Quick Use :running_woman:‍
 
 ```sh
-import ConsentsSummary from 'consents-summary';
+import {ConsentsSummary as ConsentsSummary} from 'consents-summary';
 
 <ConsentsSummary data={{"test": "lorem ipsum"}} />
 ```
