@@ -21,7 +21,9 @@
     "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "babel-version": "babel --version"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@datafund/consent-viewer": "^0.1.0"
+  },
   "devDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -34,8 +36,7 @@
     "rimraf": "^2.6.3",
     "typescript": "^3.4.5",
     "lodash": "^4.17.11",
-    "jsonwebtoken": "^8.5.1",
-    "consent-viewer": "file:../consent-viewer"
+    "jsonwebtoken": "^8.5.1"
   },
   "browserslist": {
     "production": [
