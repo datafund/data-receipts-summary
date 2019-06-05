@@ -1,9 +1,10 @@
 import React, {Component} from "react";
 import _ from "lodash";
+import moment from "moment";
 import "./ConsentsSummary.css";
 import jwt from 'jsonwebtoken';
 import {Modal, ModalHeader, ModalBody, ModalFooter, Button} from "reactstrap";
-import {ConsentViewer} from "consent-viewer";
+import {ConsentViewer as ConsentViewer} from "@datafund/consent-viewer";
 
 export default class ConsentsSummary extends Component {
     constructor(props) {
@@ -41,13 +42,14 @@ export default class ConsentsSummary extends Component {
             let item = _this.state.data[k];
             let decodedItem = _this.decodeJwt(item);
 
+            console.log(decodedItem);
 
             consents.push(
                 <tr key={k}>
                     <td>{decodedItem.payload.sub}</td>
                     <td>{_this.renderPiiControllers(decodedItem.payload.piiControllers).toString()}</td>
                     <td>{_this.renderPurposes(decodedItem.payload.services).toString()}</td>
-                    <td>???</td>
+                    <td>{moment(new Date(decodedItem.payload.exp * 1000)).format('MM. DD. YYYY, HH:mm ')}</td>
                     <td>{decodedItem.payload.consentReceiptID}</td>
                     <td><a className="btn btn-sm btn-secondary text-white" onClick={(e) => {
                         _this.showDetailsModal(decodedItem);
@@ -121,7 +123,7 @@ export default class ConsentsSummary extends Component {
                             <th>Name</th>
                             <th>PII Controller</th>
                             <th>Purpose</th>
-                            <th>Valid</th>
+                            <th>Expiry Date</th>
                             <th>ID token</th>
                             <th>Actions</th>
                         </tr>
