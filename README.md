@@ -25,6 +25,6 @@ let tokenData = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdXJpc2RpY3Rpb24iOiJTSS
 <ConsentsSummary data={{tokenData}} />
 ```
 
-## Props :hammer_and_wrench:
+## Props
 - `data` (JWT token)
   
