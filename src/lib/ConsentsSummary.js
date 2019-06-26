@@ -4,9 +4,9 @@ import moment from "moment";
 import "./ConsentsSummary.css";
 import jwt from 'jsonwebtoken';
 import {Modal, ModalHeader, ModalBody, ModalFooter, Button} from "reactstrap";
-import {ConsentViewer as ConsentViewer} from "@datafund/consent-viewer";
+import { ConsentViewer } from "@datafund/consent-viewer";
 
-export default class ConsentsSummary extends Component {
+class ConsentsSummary extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -157,3 +157,5 @@ export default class ConsentsSummary extends Component {
     }
 
 }
+
+export default ConsentsSummary;
