@@ -1,6 +1,6 @@
 # Consents Summary
 
-[React](https://facebook.github.io/react) plugin for displaying Consents Summary. Each consents details can be shown as Consent Receipt in human-readable JSON form. 
+[React](https://facebook.github.io/react) plugin for displaying Consents Summary. Each consent's details can be shown as Consent Receipt in human-readable JSON form. 
 
 Quick Use
 -----------------------

@@ -1,9 +1,9 @@
 {
   "name": "@datafund/consents-summary",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "description": "Lorem ipsum",
+  "description": "React plugin for displaying Consents Summary. Each consent's details can be shown as Consent Receipt in human-readable JSON form.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/datafund/dr-summary.git"
