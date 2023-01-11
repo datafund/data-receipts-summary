@@ -37,7 +37,7 @@
     "rimraf": "^2.6.3",
     "typescript": "^3.4.5",
     "lodash": "^4.17.11",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^9.0.0"
   },
   "browserslist": {
     "production": [
